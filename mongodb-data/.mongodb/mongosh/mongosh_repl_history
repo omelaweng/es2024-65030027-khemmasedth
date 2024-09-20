@@ -1,0 +1,8 @@
+db.users.insertMany([ { Studentcode: "cream", FirstName: "Thanchira", LastName: "Charakhon", TelephoneNumber: 0991707055 }, { Studentcode: "cheese", FirstName: "Thanchir", LastName: "Charakho", TelephoneNumber: 0991234556 }, { Studentcode: "baby", FirstName: "Thanchi", LastName: "Charak", TelephoneNumber: 0992222222 }, { Studentcode: "rabbit", FirstName: "Thanch", LastName: "Char", TelephoneNumber: 0991756944 }] )
+db.students.find().pretty()
+db.users.insertMany([ { Studentcode: "cream", FirstName: "Thanchira", LastName: "Charakhon", TelephoneNumber: 0991707055 }, { Studentcode: "cheese", FirstName: "Thanchir", LastName: "Charakho", TelephoneNumber: 0991234556 }, { Studentcode: "baby", FirstName: "Thanchi", LastName: "Charak", TelephoneNumber: 0992222222 }, { Studentcode: "rabbit", FirstName: "Thanch", LastName: "Char", TelephoneNumber: 0991756944 }] )
+use mydatabase
+uae mydatabase
+ex
+db.users.insertMany([ { Studentcode: "cream", FirstName: "Thanchira", LastName: "Charakhon", TelephoneNumber: 0991707055 }, { Studentcode: "cheese", FirstName: "Thanchir", LastName: "Charakho", TelephoneNumber: 0991234556 }, { Studentcode: "baby", FirstName: "Thanchi", LastName: "Charak", TelephoneNumber: 0992222222 }, { Studentcode: "rabbit", FirstName: "Thanch", LastName: "Char", TelephoneNumber: 0991756944 }] )
+use mydatabasemydatabase

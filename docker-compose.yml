@@ -1,0 +1,36 @@
+version: '3'
+services:
+  express:
+    build:
+      context: ./express
+    networks:
+      - khemmasedth-network
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/mydatabase
+
+  nginx:
+    image: nginx
+    networks:
+      - khemmasedth-network
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf  # Mount the config file
+      - ./public:/usr/share/nginx/html  # Mount the directory containing HTML files
+
+  mongodb:
+    image: mongo
+    networks:
+      - khemmasedth-network
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongodb-data:/data/db  # Mount volume to host directory
+
+networks:
+  khemmasedth-network:
+    driver: bridge
+
+
